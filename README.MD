@@ -151,9 +151,9 @@ Installing NPM :
 
 ### Installation  <img align="center" src="https://raw.githubusercontent.com/digibearapp/digibear-icons/main/assets/sticker/cloud-arrow-down-sticker.svg" width="32px" height="32px" />
 
-Install this package and the [svg-icons](https://github.com/digibearapp/svg-icons) package from NPM :
+Install this package and the [digibear-svg-icons](https://github.com/digibearapp/digibear-svg-icons) package from NPM :
    ```sh
-   npm install @digibearapp/digibear-icons-react @digibearapp/svg-icons
+   npm install @digibearapp/digibear-icons-react @digibearapp/digibear-svg-icons
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -177,12 +177,12 @@ Inside `App.tsx` :
     DigibearIconsRegistryContext
   } from '@digibearapp/digibear-icons-react';
   ```
-2. Import the icons you need from [@digibearapp/svg-icons](https://github.com/digibearapp/svg-icons)
+2. Import the icons you need from [@digibearapp/digibear-svg-icons](https://github.com/digibearapp/digibear-svg-icons)
   ```js
   import {
     dbPizza,
     dbPopCorn
-  } from '@digibearapp/svg-icons';
+  } from '@digibearapp/digibear-svg-icons';
   ```
 3. Make sure you do the following inside your `App` method or class.
   ```js
