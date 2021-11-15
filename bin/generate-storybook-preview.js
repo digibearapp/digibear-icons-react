@@ -3,11 +3,11 @@ const fs = require("fs");
 const chalk = require("chalk");
 const paths = require('./paths');
 const constants = require('./constants');
-const { allNames } = require('@digibearapp/digibear-svg-icons');
+const { allIconsMap } = require('@digibearapp/digibear-svg-icons');
 const { prefixName } = require("./utils");
 
 function generateStorybookPreview() {
-    let fileLines = generateStoriesFileLines(allNames.map(name => prefixName(name)).join(",\n\t\t\t\t"))
+    let fileLines = generateStoriesFileLines(Object.keys(allIconsMap).map(name => prefixName(name)).join(",\n\t\t\t\t"))
     createStoriesFile(fileLines);
 }
 

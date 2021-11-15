@@ -43,7 +43,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.1.0", "@babel/core@^7.12.10", "@babel/core@^7.12.3", "@babel/core@^7.15.8", "@babel/core@^7.7.5":
+"@babel/core@^7.1.0", "@babel/core@^7.12.10", "@babel/core@^7.12.3", "@babel/core@^7.16.0", "@babel/core@^7.7.5":
   version "7.16.0"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.16.0.tgz#c4ff44046f5fe310525cc9eb4ef5147f0c5374d4"
   integrity sha512-mYZEvshBRHGsIAiyH5PzCFTCfbWfoYbO/jcSdXQSUQu1/pW0xDZAUP7KEc32heqWTAfAHhV9j1vH8Sav7l+JNQ==
@@ -1101,20 +1101,20 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@digibearapp/digibear-common-types@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-common-types/-/digibear-common-types-1.0.1.tgz#934058fdcd62a2c987081151dde39fc6f63edc08"
-  integrity sha512-iQEkU+/bKKwVCQGtvSMVOMt9vTa3/2cIRePlcBgo/Cd+1BW+dcNwS05GXdyrgUYDdOl5YOk3q/aTB+YB9bAukA==
+"@digibearapp/digibear-common-types@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-common-types/-/digibear-common-types-1.0.5.tgz#de0d80dee8b4807a9dc3da3497edb8678ffda0dd"
+  integrity sha512-cyjA5O+B4PiqDg7D65BggEvCOpRlG0j1mKh7Y1MZgvW5hkyk2Q4GrqTeu/+i5/S5sCNRmeYb3GzLe37FP5h/Sw==
 
-"@digibearapp/digibear-svg-core@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-svg-core/-/digibear-svg-core-1.0.1.tgz#b0ebc46edf7b80fac27b71bc0d4622de0c385798"
-  integrity sha512-NuYsMxEb2MenzNOauZhoepkjSydLPInfpeeZQZR7zeZn8HqTReqZxRhIlRVD5hW5xuoPeO3w2PUC4xvA5AcMIA==
+"@digibearapp/digibear-svg-core@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-svg-core/-/digibear-svg-core-1.0.4.tgz#69db687b7828f5fcff349cb9557c87da6b067333"
+  integrity sha512-CbyVpbhhI6hnQ9JhA3dtG7PSTvIbbUhISlg0AXLOR09g9X0wU6ZTjxifmGGV//d/mxf4US+Ol7M8/w7H2Tz9rw==
 
-"@digibearapp/digibear-svg-icons@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-svg-icons/-/digibear-svg-icons-1.0.1.tgz#ced32bcc9ea0f306bcb66d67022383b548b5a853"
-  integrity sha512-rR0vUz1bv2a2/Y89bgryxLAI70dfFRLAuL2aGJI8Ni1WsWpV5kvX84jJsfu5bOhd+vPgL5S307O/q42SzZ+yew==
+"@digibearapp/digibear-svg-icons@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@digibearapp/digibear-svg-icons/-/digibear-svg-icons-1.0.4.tgz#845ff3a53c2926a2c21da4cc524cd3b78713ba93"
+  integrity sha512-pfv2urnsURWT1bp7rXtc05o6VV6Owc3ra7tcjsYIidVaCEyV2x+ywW33o0GpNUsVqqSULkySKOJcSWD85hn7PA==
 
 "@discoveryjs/json-ext@^0.5.3":
   version "0.5.5"
@@ -2403,7 +2403,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-dom@^17.0.10":
+"@types/react-dom@^17.0.11":
   version "17.0.11"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
   integrity sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==
@@ -2417,7 +2417,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^17.0.31":
+"@types/react@*", "@types/react@^17.0.34":
   version "17.0.34"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.34.tgz#797b66d359b692e3f19991b6b07e4b0c706c0102"
   integrity sha512-46FEGrMjc2+8XhHXILr+3+/sTe3OfzSPU9YGKILLrUYbQ1CLQC9Daqo1KzENGXAWwrFwiY0l4ZbF20gRvgpWTg==
@@ -6486,10 +6486,10 @@ js-yaml@^3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-jsdom@^18.0.0:
-  version "18.0.1"
-  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-18.0.1.tgz#7317c91be425f31ff25814ad427eed8a2a310b61"
-  integrity sha512-mgVzrYP4IJiJKVqXkAdBn+jg+nQgPusBxTJulz3m1Y/1RIrkk8aDoNaQE5BNbHwe72WwiwE7k3Av2THXDpvzPQ==
+jsdom@^18.1.0:
+  version "18.1.0"
+  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-18.1.0.tgz#43e88a0e4d6d2aeeec0a18810c0934c02b2ae3e4"
+  integrity sha512-q6QFAfSGLEUqRJ+GCV6vn6ItZCMARWh1d33wiJZPxc+wMNw7HK71JPmQ4C2lIZAsBH8TiJu4uplach/UcrC6bQ==
   dependencies:
     abab "^2.0.5"
     acorn "^8.5.0"
@@ -8628,7 +8628,7 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rollup-plugin-dts@^4.0.0:
+rollup-plugin-dts@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/rollup-plugin-dts/-/rollup-plugin-dts-4.0.1.tgz#930cbd5aaaa64a55e895ecd6ae8234e1a5467710"
   integrity sha512-DNv5F8pro/r0Hkx3JWKRtJZocDnqXfgypoajeiaNq134rYaFcEIl/oas5PogD1qexMadVijsHyVko1Chig0OOQ==
@@ -8652,10 +8652,10 @@ rollup-plugin-terser@^7.0.2:
     serialize-javascript "^4.0.0"
     terser "^5.0.0"
 
-rollup@^2.58.0:
-  version "2.59.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.59.0.tgz#108c61b0fa0a37ebc8d1f164f281622056f0db59"
-  integrity sha512-l7s90JQhCQ6JyZjKgo7Lq1dKh2RxatOM+Jr6a9F7WbS9WgKbocyUSeLmZl8evAse7y96Ae98L2k1cBOwWD8nHw==
+rollup@^2.60.0:
+  version "2.60.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.60.0.tgz#4ee60ab7bdd0356763f87d7099f413e5460fc193"
+  integrity sha512-cHdv9GWd58v58rdseC8e8XIaPUo8a9cgZpnCMMDGZFDZKEODOiPPEQFXLriWr/TjXzhPPmG5bkAztPsOARIcGQ==
   optionalDependencies:
     fsevents "~2.3.2"
 

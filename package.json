@@ -1,6 +1,6 @@
 {
   "name": "@digibearapp/digibear-icons-react",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A free high-quality icon library for React.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -17,11 +17,12 @@
     "build": "rimraf dist && rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "generate-stories": "node ./bin/generate.js"
+    "generate-stories": "node ./bin/generate.js",
+    "update-git": "git add . && git commit -m $npm_package_version && git push"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.8",
-    "@digibearapp/digibear-svg-icons": "^1.0.1",
+    "@babel/core": "^7.16.0",
+    "@digibearapp/digibear-svg-icons": "^1.0.4",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
@@ -30,16 +31,16 @@
     "@storybook/addon-links": "^6.3.12",
     "@storybook/react": "^6.3.12",
     "@terascope/fetch-github-release": "^0.8.7",
-    "@types/react": "^17.0.31",
-    "@types/react-dom": "^17.0.10",
+    "@types/react": "^17.0.34",
+    "@types/react-dom": "^17.0.11",
     "babel-loader": "^8.2.3",
     "chalk": "^4.1.2",
-    "jsdom": "^18.0.0",
+    "jsdom": "^18.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
-    "rollup": "^2.58.0",
-    "rollup-plugin-dts": "^4.0.0",
+    "rollup": "^2.60.0",
+    "rollup-plugin-dts": "^4.0.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
     "tslib": "^2.3.1",
@@ -50,7 +51,7 @@
     "react-dom": "^17.0.2"
   },
   "dependencies": {
-    "@digibearapp/digibear-common-types": "^1.0.1",
-    "@digibearapp/digibear-svg-core": "^1.0.1"
+    "@digibearapp/digibear-common-types": "^1.0.5",
+    "@digibearapp/digibear-svg-core": "^1.0.4"
   }
 }

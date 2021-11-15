@@ -3,10 +3,10 @@ const fs = require("fs");
 const chalk = require("chalk");
 const paths = require('./paths');
 const constants = require('./constants');
-const { allNames } = require('@digibearapp/digibear-svg-icons');
+const { allIconsMap } = require('@digibearapp/digibear-svg-icons');
 
 function generateDbStories() {
-    let fileLines = generateStoriesFileLines(allNames.map(key => `"${key}"`).join(",\n\t\t\t\t"))
+    let fileLines = generateStoriesFileLines(Object.keys(allIconsMap).map(key => `"${key}"`).join(",\n\t\t\t\t"))
     createStoriesFile(fileLines);
 }
 
