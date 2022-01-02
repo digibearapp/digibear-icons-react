@@ -1,7 +1,7 @@
 import fs from "fs";
 import chalk from "chalk";
-import * as paths from "./paths.js";
-import * as constants from "./constants.js";
+import * as paths from "./paths.mjs";
+import * as constants from "./constants.mjs";
 import { allIconsMap } from "@digibearapp/digibear-svg-icons/dist/esm/index.js";
 
 export function generateDbStories() {

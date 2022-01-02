@@ -13,12 +13,11 @@
     "LICENSE.txt",
     "attribution.js"
   ],
-  "type": "module",
   "scripts": {
     "build": "rimraf dist && rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "generate-stories": "node ./bin/generate.js",
+    "generate-stories": "node ./bin/generate.mjs",
     "update-git": "git add . && git commit -m $npm_package_version && git push"
   },
   "devDependencies": {
