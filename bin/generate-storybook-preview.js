@@ -1,18 +1,21 @@
-#!/usr/bin/env node
-const fs = require("fs");
-const chalk = require("chalk");
-const paths = require('./paths');
-const constants = require('./constants');
-const { allIconsMap } = require('@digibearapp/digibear-svg-icons');
-const { prefixName } = require("./utils");
+import fs from "fs";
+import chalk from "chalk";
+import * as paths from "./paths.js";
+import * as constants from "./constants.js";
+import { allIconsMap } from "@digibearapp/digibear-svg-icons/dist/esm/index.js";
+import { prefixName } from "./utils.js";
 
-function generateStorybookPreview() {
-    let fileLines = generateStoriesFileLines(Object.keys(allIconsMap).map(name => prefixName(name)).join(",\n\t\t\t\t"))
-    createStoriesFile(fileLines);
+export function generateStorybookPreview() {
+  let fileLines = generateStoriesFileLines(
+    Object.keys(allIconsMap)
+      .map((name) => prefixName(name))
+      .join(",\n\t\t\t\t")
+  );
+  createStoriesFile(fileLines);
 }
 
 function generateStoriesFileLines(iconKeys) {
-    return `\
+  return `\
 ${constants.HEADER}
 import { DigibearIconsRegistryContext } from "../src/lib/DbIcon/DbIcon.types";
 import { DigibearIconsRegistry } from "@digibearapp/digibear-svg-core";
@@ -41,22 +44,20 @@ export const decorators = [
   },
 ];
 
-`
+`;
 }
 
 function createStoriesFile(fileLines) {
-    try {
-        fs.writeFileSync(paths.STORIES_PREVIEW_PATH, fileLines);
-        console.log(`${chalk.inverse.green(" DONE ")} preview.js created.`);
-    } catch (err) {
-        console.error(
-            `${chalk.inverse.red(" FAIL ")} Failed to created preview.js.`
-        );
-        console.group();
-        console.error(err);
-        console.groupEnd();
-        return;
-    }
+  try {
+    fs.writeFileSync(paths.STORIES_PREVIEW_PATH, fileLines);
+    console.log(`${chalk.inverse.green(" DONE ")} preview.js created.`);
+  } catch (err) {
+    console.error(
+      `${chalk.inverse.red(" FAIL ")} Failed to created preview.js.`
+    );
+    console.group();
+    console.error(err);
+    console.groupEnd();
+    return;
+  }
 }
-
-module.exports = { generateStorybookPreview }

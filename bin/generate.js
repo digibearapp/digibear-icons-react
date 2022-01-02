@@ -1,5 +1,5 @@
-const { generateStorybookPreview } = require('./generate-storybook-preview');
-const { generateDbStories } = require('./generate-stories');
+import { generateStorybookPreview } from "./generate-storybook-preview.js";
+import { generateDbStories } from "./generate-stories.js";
 
 generateStorybookPreview();
 generateDbStories();

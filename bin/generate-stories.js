@@ -1,17 +1,20 @@
-#!/usr/bin/env node
-const fs = require("fs");
-const chalk = require("chalk");
-const paths = require('./paths');
-const constants = require('./constants');
-const { allIconsMap } = require('@digibearapp/digibear-svg-icons');
+import fs from "fs";
+import chalk from "chalk";
+import * as paths from "./paths.js";
+import * as constants from "./constants.js";
+import { allIconsMap } from "@digibearapp/digibear-svg-icons/dist/esm/index.js";
 
-function generateDbStories() {
-    let fileLines = generateStoriesFileLines(Object.keys(allIconsMap).map(key => `"${key}"`).join(",\n\t\t\t\t"))
-    createStoriesFile(fileLines);
+export function generateDbStories() {
+  let fileLines = generateStoriesFileLines(
+    Object.keys(allIconsMap)
+      .map((key) => `"${key}"`)
+      .join(",\n\t\t\t\t")
+  );
+  createStoriesFile(fileLines);
 }
 
 function generateStoriesFileLines(iconKeys) {
-    return `\
+  return `\
 ${constants.HEADER}
 import { DbIconProps } from '@digibearapp/digibear-common-types';
 import { Story } from '@storybook/react';
@@ -67,22 +70,20 @@ Icon.args = {
     flippedV: false,
 };
 
-`
+`;
 }
 
 function createStoriesFile(fileLines) {
-    try {
-        fs.writeFileSync(paths.STORIES_PATH, fileLines);
-        console.log(`${chalk.inverse.green(" DONE ")} DbIcon.stories.tsx created.`);
-    } catch (err) {
-        console.error(
-            `${chalk.inverse.red(" FAIL ")} Failed to created DbIcon.stories.tsx.`
-        );
-        console.group();
-        console.error(err);
-        console.groupEnd();
-        return;
-    }
+  try {
+    fs.writeFileSync(paths.STORIES_PATH, fileLines);
+    console.log(`${chalk.inverse.green(" DONE ")} DbIcon.stories.tsx created.`);
+  } catch (err) {
+    console.error(
+      `${chalk.inverse.red(" FAIL ")} Failed to created DbIcon.stories.tsx.`
+    );
+    console.group();
+    console.error(err);
+    console.groupEnd();
+    return;
+  }
 }
-
-module.exports = { generateDbStories }

@@ -1,6 +1,6 @@
 {
   "name": "@digibearapp/digibear-icons-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A free high-quality icon library for React.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -13,6 +13,7 @@
     "LICENSE.txt",
     "attribution.js"
   ],
+  "type": "module",
   "scripts": {
     "build": "rimraf dist && rollup -c",
     "storybook": "start-storybook -p 6006",
@@ -21,37 +22,37 @@
     "update-git": "git add . && git commit -m $npm_package_version && git push"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@digibearapp/digibear-svg-icons": "^1.0.4",
+    "@babel/core": "^7.16.7",
+    "@digibearapp/digibear-svg-icons": "^1.0.5",
     "@rollup/plugin-commonjs": "^21.0.1",
-    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-node-resolve": "^13.1.2",
     "@rollup/plugin-typescript": "^8.3.0",
-    "@storybook/addon-actions": "^6.3.12",
-    "@storybook/addon-essentials": "^6.3.12",
-    "@storybook/addon-links": "^6.3.12",
-    "@storybook/react": "^6.3.12",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
     "@terascope/fetch-github-release": "^0.8.7",
-    "@types/react": "^17.0.34",
+    "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "babel-loader": "^8.2.3",
-    "chalk": "^4.1.2",
-    "jsdom": "^18.1.0",
+    "chalk": "^5.0.0",
+    "jsdom": "^19.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
-    "rollup": "^2.60.0",
-    "rollup-plugin-dts": "^4.0.1",
+    "rollup": "^2.62.0",
+    "rollup-plugin-dts": "^4.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
     "tslib": "^2.3.1",
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.4"
   },
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "dependencies": {
-    "@digibearapp/digibear-common-types": "^1.0.5",
-    "@digibearapp/digibear-svg-core": "^1.0.4"
+    "@digibearapp/digibear-common-types": "^1.0.6",
+    "@digibearapp/digibear-svg-core": "^1.0.5"
   }
 }
