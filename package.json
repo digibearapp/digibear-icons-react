@@ -1,6 +1,6 @@
 {
   "name": "@digibearapp/digibear-icons-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A free high-quality icon library for React.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
-    "@digibearapp/digibear-svg-icons": "^1.0.5",
+    "@digibearapp/digibear-svg-icons": "^1.0.6",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.2",
     "@rollup/plugin-typescript": "^8.3.0",
@@ -39,7 +39,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
-    "rollup": "^2.62.0",
+    "rollup": "^2.63.0",
     "rollup-plugin-dts": "^4.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
@@ -51,7 +51,7 @@
     "react-dom": "^17.0.2"
   },
   "dependencies": {
-    "@digibearapp/digibear-common-types": "^1.0.6",
-    "@digibearapp/digibear-svg-core": "^1.0.5"
+    "@digibearapp/digibear-common-types": "^1.0.7",
+    "@digibearapp/digibear-svg-core": "^1.0.6"
   }
 }
