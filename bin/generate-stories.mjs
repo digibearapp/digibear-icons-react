@@ -16,9 +16,8 @@ export function generateDbStories() {
 function generateStoriesFileLines(iconKeys) {
   return `\
 ${constants.HEADER}
-import { DbIconProps } from '@digibearapp/digibear-common-types';
 import { Story } from '@storybook/react';
-import { DbIcon } from '..';
+import { DbIcon, DbIconProps } from '..';
 
 export default {
     title: 'Example/DbIcon',
